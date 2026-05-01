@@ -8,15 +8,15 @@ function displayPosts(posts) {
     posts.forEach(post => {
         //create elements
         const li = document.createElement('li');
-        const h = document.createElement('h');
+        const h1 = document.createElement('h1');
         const p = document.createElement('p');
 
         //Add text content
-        h.textContent = post.title;
+        h1.textContent = post.title;
         p.textContent = post.body;
 
         //put h1 and p inside li
-        li.appendChild(h);
+        li.appendChild(h1);
         li.appendChild(p);
 
         //add li to ul
